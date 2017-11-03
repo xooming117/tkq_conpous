@@ -1,6 +1,6 @@
 FROM markadams/chromium-xvfb-py2
-WORKDIR /opt/tbk/chrome
-COPY ./requirements.txt /opt/tbk/chrome/requirements.txt
+WORKDIR /opt/tbk/conpous
+COPY ./requirements.txt /opt/tbk/conpous/requirements.txt
 
 RUN pip install -r requirements.txt
 
