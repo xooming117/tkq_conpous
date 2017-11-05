@@ -17,7 +17,7 @@ def compare_today(day):
     today = datetime.today()
     today = datetime(today.year, today.month, today.day, 0, 0, 0)
     ymd = day.split('.')
-    day1 = datetime(ymd[0], ymd[1], ymd[2])
+    day1 = datetime(int(ymd[0]), int(ymd[1]), int(ymd[2]))
     if today > day1:
         return 1
     else:
