@@ -24,7 +24,7 @@ def update(g):
         url = g['couponShortLinkUrl']
         print url
 
-        if not url or len(url.strip()) == 0:
+        if url is None or len(url.strip()) == 0:
             print 'url is empty'
             delete_goods(g)
         else:
