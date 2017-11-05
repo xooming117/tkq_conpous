@@ -27,7 +27,7 @@ def update(g):
         if not url or len(url.strip()) == 0:
             print 'url is empty'
             delete_goods(g)
-        else:s
+        else:
             yxq = get_yhq_yxq(url)
             if len(yxq):
                 g['couponEffectiveStartTime'] = yxq[0]
