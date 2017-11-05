@@ -21,7 +21,7 @@ def get_yhq_yxq(url):
 
 def update(g):
     try:
-        url = g['shortLinkUrl']
+        url = g['couponShortLinkUrl']
         print url
         if len(url.strip()) == 0:
             print 'url is empty'
